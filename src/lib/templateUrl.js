@@ -10,7 +10,6 @@
 
   window.templateURL = function(src) {
     var template;
-
     // create a promise
     var defer = $.Deferred();
     defer.done(data => {
