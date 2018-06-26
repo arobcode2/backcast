@@ -8,9 +8,7 @@ var SearchView = Backbone.View.extend({
   
   searchTerm: function() {
     var userInput = this.$('.form-control').val();
-    if (userInput) {
-      this.collection.search(userInput);
-    }
+    this.collection.search(userInput);
     this.$('.form-control').val('');
   },
   
